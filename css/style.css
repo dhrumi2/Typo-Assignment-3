@@ -1,0 +1,369 @@
+@font-face {
+    font-family: heading;
+    src: url('AGaramondPro-Semibold.otf');
+}
+
+@font-face {
+    font-family: body;
+    src: url('AGaramondPro-Regular.otf');
+}
+
+@font-face {
+    font-family: sub-heading;
+    src: url('adelia.ttf');
+}
+
+:root{
+    --bg-color: rgb(48, 64, 64); 
+    --text-color: rgb(255, 255, 255);
+    --font-ratio: 1.2;
+    --main-heading: calc(2rem * var(--font-ratio));
+    --secondary-heading: calc(1.5rem * var(--font-ratio));
+    --nav-text: calc(1.2rem * var(--font-ratio));
+    --body-text: calc(1rem * var(--font-ratio));
+    --body: "body";
+    --heading:"heading";
+    --sub-heading:"sub-heading";
+}
+
+.wrapper{
+    width: 60%;
+    margin: auto;
+}
+
+.logo img{
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+nav ol {
+    margin: auto;
+    transform: translate(17%, 0%);
+}
+
+nav ol li {
+    display: inline-block;
+    margin: 33px 20px;
+}
+
+nav ol li a {
+    color: var(--bg-color);
+    font-size: var(--nav-text);
+    font-family: var(--heading);
+    text-decoration: none;
+}
+
+nav ol li a:hover {
+    font-size: larger;
+}
+
+header{
+    margin-top: -20px;
+    background-color: var(--bg-color);
+    height: 33vh;
+}
+
+header h1{
+    font-family: var(--heading);
+    font-size: var(--main-heading);
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 30px;
+}
+
+header #name{
+    font-family: var(--sub-heading);
+    font-size: var(--secondary-heading);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: -50px;
+}
+
+#Goal{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+hr{
+    width: 30%;
+    float: left;
+    border: solid 2px rgb(162, 162, 162);
+    margin-top: -15px;
+}
+
+p{
+    font-family: var(--body);
+    font-size: var(--body-text);
+    color: var(--bg-color);
+    width: 80%;
+}
+
+#Grids{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+#Grids img{
+    width: 90%;
+    height: 90%;
+}
+
+#Typography{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+#Typography .typo{
+    font-family: var(--heading);
+    margin-top: 0px;
+    font-size: 72px;
+    margin-bottom: -20px;
+}
+
+#Typography h2{
+    font-family: var(--heading);
+    margin-top: 0px;
+    font-size: 48px;
+    margin-bottom: -20px;
+}
+
+#Typography h3{
+    font-family: var(--body);
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+#Typography h4{
+    font-family: var(--body);
+    margin-top: 0px;
+    font-size: 24px;
+    margin-bottom: -20px;
+}
+
+#Typography h5{
+    font-family: var(--body);
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: -20px;
+}
+
+#Colors{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.flex{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 30vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex p{
+    padding-top: 110px;
+    margin-left: 35px;
+}
+
+.flex .box1{
+    width: 20%;
+    height: 60%;
+    background-color: #4A5959;
+    margin-left: -5px;
+}
+
+.flex .box2{
+    width: 20%;
+    height: 60%;
+    background-color: #304040;
+    margin-left: -5px;
+}
+
+.flex .box3{
+    width: 20%;
+    height: 60%;
+    background-color: #BFBFBF;
+    margin-left: -5px;
+}
+
+.flex .box4{
+    width: 20%;
+    height: 60%;
+    background-color: #D9D9D9;
+    margin-left: -5px;
+}
+
+.flex .box5{
+    width: 20%;
+    height: 60%;
+    background-color: #F2F2F2;
+    margin-left: -5px;
+}
+
+#Buttons{
+    margin-left: 80px;
+    margin-top: -40px;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3A4848;
+    font-family: var(--body);
+    font-size: var(--body-text);
+    color: #F0F0F0;
+}
+
+.hover{
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+    margin-left: 250px;
+}
+
+.hover p{
+   margin-left: 75px;
+   margin-top: 5px;
+}
+
+.hover button:hover{
+    background-color: #F0F0F0;
+    color: #253231;
+}
+
+.link{
+    margin-top: -110px;
+    margin-left: 500px;
+}
+
+.link a{
+    text-decoration: none;
+    color: #253231;
+}
+
+.link a:hover{
+    color: #D0D0CF;
+}
+
+@media screen and (max-width: 480px) {
+    :root{
+        --font-ratio: 1.0;
+    }
+    
+    .wrapper{
+        margin: auto;
+    }
+    
+    .logo img{
+        width: 60%;
+        height: 60%;
+    }
+    
+    nav ol li {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        line-height: 5px;
+
+    }
+
+    nav ol li a{
+        font-size: var(--sub-heading);
+        text-align: center;
+    }
+
+    header{
+        margin-top: 0px;
+        background-color: var(--bg-color);
+        height: 33vh;
+        width: 170%;
+        margin-left: -95px;
+    }
+
+    #Goal{
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+    
+    hr{
+        width: 80%;
+        float: left;
+        border: solid 2px rgb(162, 162, 162);
+        margin-top: -15px;
+    }
+
+    p{
+        width: 110%;
+    }
+
+    #Grids{
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+    
+    #Grids img{
+        width: 120%;
+        height: 120%;
+    }
+    
+    #Typography{
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+
+    #Typography .typo{
+        font-size: 60px;
+        width: 150%;
+    }
+
+    #Colors{
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+
+    .flex{
+        display: flex;
+        width: 120%;
+    }
+
+    .flex p{
+        padding-top: 110px;
+        margin-left: 5px;
+    }
+
+    #Buttons{
+        margin-left: -50px;
+        margin-top: -40px;
+    }
+    
+    button{
+        width: 150px;
+        height: 40px;
+        font-size: var(--body-text);
+    }
+
+    .hover{
+        margin-top: -40px;
+        margin-left: 200px;
+    }
+
+    .hover p{
+        margin-left: 60px;
+     }
+
+     .link{
+        margin-top: -40px;
+        margin-left: 0px;
+    }
+}
+
+
